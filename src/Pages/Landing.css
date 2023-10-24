@@ -1,0 +1,115 @@
+:root {
+  --primary-color: #ff3b30;
+  --secondary-color: #fff6ea;
+  --action-color: #3b82f6;
+  --grey-color: #9a9a9a;
+  --black-color: #282828;
+  --white-color: #fff;
+  --lynx-white-color: #f7f7f7;
+  --violet-color: #5348c7;
+  --lynx-gray-color: #c5c5c5;
+  --font: "Open Sans", sans-serif;
+  --xxl-size: 4rem;
+  --xl-size: 2.5rem;
+  --l-size: 2rem;
+  --m-size: 1.5rem;
+  --s-size: 1rem;
+  --xs-size: 0.5rem;
+  --xl-font: 3rem;
+  --light-weight: 300;
+  --regular-weight: 400;
+  --semibold-weight: 600;
+  --bold-weight: 700;
+  --black-weight: 900;
+}
+
+.main-page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-section {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--grey-color);
+}
+.search-section input {
+  margin: 5px 5px 5px 10px;
+}
+
+.search-section label {
+  margin: 5px 10px 5px 0px;
+  font-weight: var(--regular-weight);
+}
+.search-section button {
+  background: none;
+  border: none;
+  background-color: var(--primary-color);
+  padding: 7.5px 15px;
+  color: var(--white-color);
+  cursor: pointer;
+}
+
+.new-recipe-box {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.new-recipe-container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--lynx-white-color);
+  padding: 20px;
+}
+
+.new-recipe-container label {
+  margin: 10px;
+}
+
+.new-recipe-box button {
+  background: none;
+  border: none;
+  background-color: var(--primary-color);
+  padding: 7.5px 15px;
+  color: var(--white-color);
+  cursor: pointer;
+}
+
+.recipe-list {
+  list-style: none;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.recipe-list li {
+  margin: 10px;
+  background-color: var(--lynx-white-color);
+  border: 1px solid var(--grey-color);
+  padding: 10px;
+}
+
+.tags {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.tags i {
+  padding: 10px;
+  margin: 5px;
+}
